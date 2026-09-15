@@ -1,0 +1,420 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #eeeeee;
+}
+
+
+/* =========================
+   PÁGINA
+========================= */
+
+.login-page {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #eeeeee;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.login-header {
+  width: 100%;
+  height: 90px;
+
+  background: #a9254d;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  width: 100%;
+
+  padding: 0 50px;
+}
+
+.header-title {
+  color: white;
+
+  font-size: 28px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.login-main {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 100px;
+
+  padding: 50px 30px;
+}
+
+
+/* =========================
+   SECCIÓN DEL LOGO
+========================= */
+
+.login-brand {
+  width: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-agua {
+  width: 280px;
+  max-width: 100%;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   SECCIÓN DEL FORMULARIO
+========================= */
+
+.login-form-section {
+  width: 460px;
+  max-width: 100%;
+}
+
+
+/* =========================
+   TARJETA
+========================= */
+
+.login-card {
+  width: 100%;
+
+  background: white;
+
+  padding: 45px 50px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.login-card h1 {
+  margin: 0;
+
+  text-align: center;
+
+  color: #a9254d;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   DESCRIPCIÓN
+========================= */
+
+.login-description {
+  margin: 12px 0 32px;
+
+  text-align: center;
+
+  color: #666666;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   GRUPOS DEL FORMULARIO
+========================= */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #333333;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.form-group input {
+  width: 100%;
+  height: 45px;
+
+  padding: 0 18px;
+
+  border: 1px solid #999999;
+  border-radius: 23px;
+
+  outline: none;
+
+  background: white;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+
+/* INPUT AL SELECCIONAR */
+
+.form-group input:focus {
+  border-color: #a9254d;
+
+  box-shadow:
+    0 0 0 2px rgba(169, 37, 77, 0.12);
+}
+
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder {
+  color: #999999;
+}
+
+
+/* =========================
+   BOTÓN LOGIN
+========================= */
+
+.login-button {
+  width: 100%;
+  height: 46px;
+
+  margin-top: 5px;
+
+  border: none;
+  border-radius: 23px;
+
+  background: #a9254d;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+/* HOVER */
+
+.login-button:hover {
+  background: #8d1f41;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================
+   ENLACES
+========================= */
+
+.login-links {
+  margin-top: 28px;
+
+  text-align: center;
+}
+
+
+/* PÁRRAFOS */
+
+.login-links p {
+  margin: 10px 0;
+
+  color: #666666;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   BOTONES TIPO ENLACE
+========================= */
+
+.link-button {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #a9254d;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+/* HOVER */
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.login-footer {
+  width: 100%;
+  height: 65px;
+
+  background: #222222;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 13px;
+}
+
+.login-footer p {
+  margin: 0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .login-main {
+    gap: 50px;
+  }
+
+  .login-brand {
+    width: 260px;
+  }
+
+  .logo-agua {
+    width: 230px;
+  }
+
+  .login-form-section {
+    width: 420px;
+  }
+
+}
+
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 700px) {
+
+  .login-header {
+    height: 75px;
+  }
+
+  .header-content {
+    padding: 0 25px;
+  }
+
+  .header-title {
+    font-size: 24px;
+  }
+
+
+  .login-main {
+    flex-direction: column;
+
+    gap: 25px;
+
+    padding: 35px 20px;
+  }
+
+
+  .login-brand {
+    width: 180px;
+  }
+
+  .logo-agua {
+    width: 170px;
+  }
+
+
+  .login-form-section {
+    width: 100%;
+    max-width: 460px;
+  }
+
+
+  .login-card {
+    padding: 35px 25px;
+  }
+
+
+  .login-card h1 {
+    font-size: 25px;
+  }
+
+
+  .login-footer {
+    height: 55px;
+
+    padding: 0 15px;
+
+    text-align: center;
+  }
+
+}
