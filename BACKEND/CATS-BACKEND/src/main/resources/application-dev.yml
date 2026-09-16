@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: dev-secret-key-min-256-bits-CHANGE-IN-PRODUCTION-1234567890
+  expiration-ms: 86400000
