@@ -1,0 +1,116 @@
+/* Login specific layout styles */
+
+.login-page {
+  /* Extending page layout if needed */
+}
+
+.login-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px 30px;
+}
+
+.login-brand {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-brand .logo-agua {
+  width: 280px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.login-form-section {
+  width: 460px;
+  max-width: 100%;
+}
+
+.login-card {
+  width: 100%;
+  background: var(--color-surface);
+  padding: 45px 50px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.login-description {
+  margin: 12px 0 32px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 15px;
+}
+
+.login-links {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.login-links p {
+  margin: 10px 0;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .login-main {
+    gap: 50px;
+  }
+
+  .login-brand {
+    width: 260px;
+  }
+
+  .login-brand .logo-agua {
+    width: 230px;
+  }
+
+  .login-form-section {
+    width: 420px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .login-main {
+    flex-direction: column;
+    gap: 25px;
+    padding: 35px 20px;
+  }
+
+  .login-brand {
+    width: 180px;
+  }
+
+  .login-brand .logo-agua {
+    width: 170px;
+  }
+
+  .login-form-section {
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .login-card {
+    padding: 35px 25px;
+  }
+
+  .login-card h1 {
+    font-size: 25px;
+  }
+}

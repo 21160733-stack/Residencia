@@ -1,0 +1,95 @@
+/* Recover specific layout styles */
+
+.recover-page {
+  /* Extend if necessary */
+}
+
+.recover-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding: 50px 30px;
+}
+
+.recover-brand {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recover-brand .logo-agua {
+  width: 250px;
+  max-width: 100%;
+}
+
+.recover-form-section {
+  width: 480px;
+  max-width: 100%;
+}
+
+.recover-card {
+  background: var(--color-surface);
+  padding: 45px 50px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.recover-card h1 {
+  margin: 0;
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.recover-description {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 15px 0 30px;
+}
+
+.recover-links {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.recover-links p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .recover-main {
+    flex-direction: column;
+    gap: 30px;
+    padding: 35px 20px;
+  }
+
+  .recover-brand {
+    width: 200px;
+  }
+
+  .recover-brand .logo-agua {
+    width: 180px;
+  }
+
+  .recover-form-section {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .recover-card {
+    padding: 35px 30px;
+  }
+
+  .recover-card h1 {
+    font-size: 23px;
+  }
+}

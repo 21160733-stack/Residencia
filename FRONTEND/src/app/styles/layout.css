@@ -1,0 +1,163 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main {
+  flex: 1;
+  display: flex;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background: var(--color-header-bg);
+  display: flex;
+  align-items: center;
+}
+
+.header--simple {
+  height: var(--header-height);
+}
+
+.header--full {
+  min-height: 125px;
+}
+
+.header-content {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+}
+
+.header--full .header-content {
+  padding: 15px 55px;
+  gap: 45px;
+}
+
+.header-title {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Header Full Variant */
+.header-brand {
+  display: flex;
+  align-items: center;
+  min-width: 390px;
+  gap: 18px;
+}
+
+.header-logo {
+  width: 80px;
+  height: 90px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  /* Optional if logo needs to be white */
+}
+
+.header-brand-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.brand-title {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.brand-subtitle {
+  margin-top: 3px;
+  font-size: 11px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.header-page-title {
+  flex: 1;
+  text-align: center;
+}
+
+.header-page-title h1 {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: var(--footer-height);
+  background: var(--color-footer-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 13px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .header--full .header-content {
+    padding: 15px 30px;
+    gap: 25px;
+  }
+
+  .header-brand {
+    min-width: 300px;
+  }
+
+  .header-page-title h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-content {
+    padding: 0 25px;
+  }
+
+  .header--full .header-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .header-brand {
+    min-width: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-logo {
+    width: 65px;
+    height: 70px;
+  }
+
+  .header-page-title {
+    width: 100%;
+  }
+
+  .header-page-title h1 {
+    font-size: 21px;
+  }
+
+  .footer {
+    height: 55px;
+    padding: 0 15px;
+    text-align: center;
+  }
+}

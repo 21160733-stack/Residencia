@@ -1,0 +1,92 @@
+/* Register specific layout styles */
+
+.register-page {
+  /* Extend if necessary */
+}
+
+.register-content {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 35px 40px 50px;
+}
+
+.register-content .titulo {
+  text-align: center;
+  margin: 0 0 35px;
+  font-size: 31px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.register-body {
+  display: flex;
+  gap: 55px;
+  align-items: center;
+}
+
+.register-body .logo-section {
+  width: 250px;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-logo {
+  width: 230px;
+  max-width: 100%;
+}
+
+.register-form {
+  flex: 1;
+}
+
+/* Override labels in register to be centered */
+.register-form .form-field label {
+  text-align: center;
+}
+
+.register-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.register-buttons .btn {
+  min-width: 160px;
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+  .register-body {
+    flex-direction: column;
+  }
+
+  .register-body .logo-section {
+    width: 220px;
+  }
+
+  .register-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .register-content {
+    padding: 30px 20px;
+  }
+
+  .register-buttons {
+    flex-direction: column;
+  }
+
+  .register-buttons .btn {
+    width: 100%;
+  }
+
+  .register-content .titulo {
+    font-size: 25px;
+  }
+}
